@@ -29,7 +29,14 @@ export default defineConfig({
             type: 'image/png',
             purpose: 'maskable'
           }
-        ]
+        ],
+        id: 'com.example.vue-pwa-tutorial-xi',
+        orientation: 'any',
+        background_color: '#ffffff',
+        start_url: '.',
+        launch_handler: {
+          client_mode: ['navigate-existing', 'auto']
+        }
       },
       devOptions: {
         enabled: true
